@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Test1</title>
+	<meta name="description" content="test1">
+
+<style>
+
+.container {
+	display:inline-block;
+	width:100px;
+	height:200px;
+	border:1px solid black;
+}
+
+
+.menu {
+	display:none;
+	width:100px;
+	height:200px;
+	background-color:green;
+}
+
+
+</style> 
+<script>
+
+function show () {
+	var alternate =document.getElementById("name_1");
+	alternate.style.display ="block";
+}
+
+
+function hide () {
+	var hide1 =document.getElementById("name_1");
+	hide1.style.display ="none";
+}
+
+
+
+</script>
+
+</head>
+<body>
+ <section>
+
+<div onclick="show()" onmouseout="hide()" class="container">1</div>
+<div onclick="show()" onmouseout="hide()" class="container">2</div>
+<div onclick="show()" onmouseout="hide()" class="container">3</div>
+            <div id="name_1" class="menu">a</div>
+            <div id="name_2" class="menu">b</div>
+            <div id="name_3" class="menu">c</div>
+
+</section>
+</body>
+</html>
